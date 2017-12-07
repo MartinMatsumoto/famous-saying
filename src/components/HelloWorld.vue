@@ -25,7 +25,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'http://advertising-1067368.view.sitestar.cn/'
     }
   }
 }
