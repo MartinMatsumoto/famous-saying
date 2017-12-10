@@ -1,6 +1,5 @@
 .DS_Store
 node_modules/
-build/
 test/
 /dist/
 npm-debug.log*
@@ -17,3 +16,4 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+*.bak
