@@ -1,30 +1,24 @@
-# famous-saying
+# 一个vuejs DEMO --以后可能完善成一个项目啦
 
-> famous saying web project
+> A Vue.js project
 
-## Build Setup
+## 使用步骤
 
 ``` bash
-# install dependencies
-npm install
+# 先安装nodejs
+# 安装好了后设置淘宝镜像
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+#不动的话用这个
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#cd进工程内
+# 安装vue-awesome-swiper 轮播控件（我用的这个）
+cnpm install vue-awesome-swiper --save
+# 安装工程
+cnpm install
+# 卡住的话多试几次
+# 安装好了后
+cnpm run dev
+# 即可在localhost:8080 访问
+# 目前只体现了组件开发 router路由并没有体现出来
+# 该框架不兼容IE9以下浏览器，用vue-router开发对SEO并不友好，使用请慎重！
