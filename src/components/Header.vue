@@ -3,12 +3,7 @@
     <div class="header">
       <div class="img_container"><img :src="logo" class="logo"/></div>
       <ul>
-        <li>网站首页</li>
-        <li>网站首页</li>
-        <li>网站首页</li>
-        <li>网站首页</li>
-        <li>网站首页</li>
-        <li>联系我们</li>
+        <li v-for="head in headers"><router-link :to="head.url">{{head.title}}</router-link><!--<a :href="head.url">{{head.title}}</a>--></li>
       </ul>
     </div>
   </div>
@@ -21,6 +16,25 @@
     name: 'header',
     data() {
       return {
+        headers: [{
+          title: "网站首页",
+          url: "/"
+        }, {
+          title: "关于我们",
+          url: "/about_us"
+        }, {
+          title: "经营项目",
+          url: ""
+        }, {
+          title: "新闻动态",
+          url: ""
+        }, {
+          title: "用户留言",
+          url: ""
+        }, {
+          title: "联系我们",
+          url: ""
+        }],
         msg: 'hello world',
         logo: logo
       }
@@ -71,7 +85,17 @@
     text-align: center;
   }
 
-  .header_container .header li:hover {
+  .header_container .header a {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  .header_container .header a:hover {
     color: #2ba399;
   }
 </style>

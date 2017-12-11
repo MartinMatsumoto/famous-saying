@@ -1,31 +1,19 @@
 <template>
   <div id="app">
     <fs-header></fs-header>
-    <fs-banner></fs-banner>
-    <fs-titles></fs-titles>
-    <suggested-content></suggested-content>
-    <suggested-type></suggested-type>
+    <router-view/>
     <fs-footer></fs-footer>
   </div>
 </template>
 
 <script>
   import header from './components/Header.vue'
-  import banner from './components/Banner.vue'
-  import FamousSayingTitles from './components/FamousSayingTitles.vue'
-  import SuggestedContent from './components/SuggestedContent.vue'
-  import SuggestedType from './components/SuggestedType.vue'
   import Footer from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
-      SuggestedContent,
-      SuggestedType,
-      FamousSayingTitles,
       'fs-header': header,
-      'fs-banner' : banner,
-      'fs-titles' : FamousSayingTitles,
       'fs-footer' : Footer,
     }
   }
