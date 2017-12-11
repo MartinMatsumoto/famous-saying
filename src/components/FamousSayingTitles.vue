@@ -85,7 +85,7 @@
     width: 345px;
     height: 345px;
     position: absolute;
-    margin: -349px 0 0 0px;
+    margin: -350px 0 0 0px;
     display: none;
   }
 
