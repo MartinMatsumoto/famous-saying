@@ -1,7 +1,7 @@
 <template>
   <div class="content_list">
-    <div class="content" v-for="(content,index) in contents">
-      <div class="big_text">首</div>
+    <router-link class="content" :to="content.url" v-for="(content,index) in contents">
+      <div class="big_text">{{content.head_text}}</div>
       <div class="text_right">
         <p class="title">{{content.title}}</p>
         <p class="small_text">
@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="clear_both"></div>
-    </div>
+    </router-link>
     <pager></pager>
   </div>
 </template>
@@ -27,8 +27,10 @@
     created: function () {
       for (var i = 0; i < 20; i++) {
         this.contents.push({
+          head_text : "首",
           title: "如何用铝合金灯光架搭建背景墙" + i,
-          content: i + "搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。"
+          content: i + "搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。搭建一个龙门架所需物料：两段铝合金立柱、一端铝合金横梁、两个方套、两个横担、两个吊挂葫芦、两个反头、两个底座、八个斜支撑、吊带、螺丝等。",
+          url : "/content/content_detail?" + i
         });
       }
     },
@@ -50,6 +52,7 @@
     padding: 10px 20px 10px 30px;
     border-bottom: 1px dotted #dbd4cd;
     cursor: pointer;
+    display: block;
   }
 
   .content_list .content:hover .text_right .title {
