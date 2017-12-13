@@ -21,7 +21,7 @@
           url: "/"
         }, {
           title: "内容浏览",
-          url: "/content"
+          url: "/content/content_list"
         }, {
           title: "关于我们",
           url: "/about_us"

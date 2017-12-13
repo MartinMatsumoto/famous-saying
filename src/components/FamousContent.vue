@@ -3,8 +3,7 @@
     <item-banner></item-banner>
     <small-title-right :title="title" :englishTitle="englishTitle"></small-title-right>
     <content-header></content-header>
-    <content-list></content-list>
-    <pager></pager>
+    <router-view/>
   </div>
 </template>
 
@@ -13,7 +12,6 @@
   import smallTitleRight from './SmallTitleRight.vue'
   import ContentHeader from './ContentHeader.vue'
   import ContentList from './ContentList.vue'
-  import Pager from './Pager'
 
   export default {
     name: 'app',
@@ -27,8 +25,7 @@
       itemBanner,
       smallTitleRight,
       ContentHeader,
-      ContentList,
-      Pager
+      ContentList
     }
   }
 </script>
