@@ -34,12 +34,11 @@
 
 <style>
   .header_container {
-    height: 120px;
+    height: 115px;
     width: 100%;
     position: fixed;
     z-index: 999;
-    /*background: url("~@/assets/bg/header_bg.png");*/
-    background-color: white;
+    background: url("~@/assets/bg/header_bg.png");
     box-shadow: 1px 1px 10px gray;
   }
 

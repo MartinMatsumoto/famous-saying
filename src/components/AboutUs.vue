@@ -72,12 +72,13 @@
 
 <style>
   .about_us {
-    padding-top: 120px;
+    padding-top: 115px;
   }
 
   .about_us .about_us_content{
     width: 1100px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
 
   .about_us .about_us_content .content{

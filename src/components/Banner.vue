@@ -76,7 +76,7 @@
   }
 
   .banner_container {
-    padding-top: 120px;
+    padding-top: 115px;
     height: 1080px;
   }
 </style>

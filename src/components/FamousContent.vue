@@ -32,7 +32,7 @@
 
 <style>
   .famous_content {
-    padding-top: 120px;
+    padding-top: 115px;
     padding-bottom: 50px;
   }
 </style>
