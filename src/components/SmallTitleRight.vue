@@ -19,8 +19,10 @@
 
 <style>
   .small_title_right {
+    width: 1100px;
     text-align: right;
     padding: 50px 0 50px 0;
+    margin: 0 auto;
   }
 
   .small_title_right .line {

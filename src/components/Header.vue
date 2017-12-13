@@ -3,7 +3,7 @@
     <div class="header">
       <div class="img_container"><img :src="logo" class="logo"/></div>
       <ul>
-        <li v-for="head in headers"><router-link :to="head.url">{{head.title}}</router-link><!--<a :href="head.url">{{head.title}}</a>--></li>
+        <li v-for="head in headers"><router-link :to="head.url">{{head.title}}</router-link></li>
       </ul>
     </div>
   </div>
@@ -20,22 +20,12 @@
           title: "网站首页",
           url: "/"
         }, {
+          title: "内容浏览",
+          url: "/content"
+        }, {
           title: "关于我们",
           url: "/about_us"
-        }, {
-          title: "经营项目",
-          url: ""
-        }, {
-          title: "新闻动态",
-          url: ""
-        }, {
-          title: "用户留言",
-          url: ""
-        }, {
-          title: "联系我们",
-          url: ""
         }],
-        msg: 'hello world',
         logo: logo
       }
     }
@@ -48,7 +38,9 @@
     width: 100%;
     position: fixed;
     z-index: 999;
+    /*background: url("~@/assets/bg/header_bg.png");*/
     background-color: white;
+    box-shadow: 1px 1px 10px gray;
   }
 
   .header_container .logo {

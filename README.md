@@ -14,6 +14,8 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 #cd进工程内
 # 安装vue-awesome-swiper 轮播控件（我用的这个）
 cnpm install vue-awesome-swiper --save
+# 安装百度地图模块
+cnpm install vue-baidu-map --save
 # 安装工程
 cnpm install
 # 卡住的话多试几次

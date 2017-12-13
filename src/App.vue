@@ -60,4 +60,8 @@
   .clear_both {
     clear: both;
   }
+
+  .global_color {
+    color: #2ba399;
+  }
 </style>
